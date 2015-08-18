@@ -1,0 +1,6 @@
+<Settings>
+	<Database>
+		<File absolute='false' path='BridgeNote.sdf' />
+		<TempDir use='true' absolute='false' path='' />
+	</Database>
+</Settings>

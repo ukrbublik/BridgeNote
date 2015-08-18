@@ -1,0 +1,334 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C52341EB-E34C-446A-A6B1-90D844E9AE4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BridgeProject</RootNamespace>
+    <AssemblyName>BridgeNote</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>BridgeProject</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <ApplicationIcon>Resources\Icon1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseSelectControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseSelectControl.Designer.cs">
+      <DependentUpon>BaseSelectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BridgeGameScoring.cs" />
+    <Compile Include="BridgeScoreTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BridgeScoreTable.Designer.cs">
+      <DependentUpon>BridgeScoreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardsDistributionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardsDistributionForm.Designer.cs">
+      <DependentUpon>CardsDistributionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CardsDistributionShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardsDistributionShowForm.Designer.cs">
+      <DependentUpon>CardsDistributionShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractSelectControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContractSelectControl.Designer.cs">
+      <DependentUpon>ContractSelectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContractSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContractSelector.Designer.cs">
+      <DependentUpon>ContractSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlCover.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlCover.Designer.cs">
+      <DependentUpon>ControlCover.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_FoldersManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_FoldersManagerForm.Designer.cs">
+      <DependentUpon>DB_FoldersManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_GameSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB_GameSelectForm.Designer.cs">
+      <DependentUpon>DB_GameSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DealInfoControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DealInfoControl.Designer.cs">
+      <DependentUpon>DealInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DealNumber_EncodeAndDecode.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOptionsForm_Common.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOptionsForm_Common.Designer.cs">
+      <DependentUpon>GameOptionsForm_Common.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOptionsForm_Comp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOptionsForm_Comp.Designer.cs">
+      <DependentUpon>GameOptionsForm_Comp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOptionsForm_Double.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOptionsForm_Double.Designer.cs">
+      <DependentUpon>GameOptionsForm_Double.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOptionsForm_Robber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOptionsForm_Robber.Designer.cs">
+      <DependentUpon>GameOptionsForm_Robber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOptionsForm_SimpleIMP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOptionsForm_SimpleIMP.Designer.cs">
+      <DependentUpon>GameOptionsForm_SimpleIMP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectsBuilder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BridgeScoreTable.resx">
+      <DependentUpon>BridgeScoreTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardsDistributionForm.resx">
+      <DependentUpon>CardsDistributionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardsDistributionShowForm.resx">
+      <DependentUpon>CardsDistributionShowForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContractSelector.resx">
+      <DependentUpon>ContractSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlCover.resx">
+      <DependentUpon>ControlCover.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_FoldersManagerForm.resx">
+      <DependentUpon>DB_FoldersManagerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB_GameSelectForm.resx">
+      <DependentUpon>DB_GameSelectForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOptionsForm_Common.resx">
+      <DependentUpon>GameOptionsForm_Common.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOptionsForm_Comp.resx">
+      <DependentUpon>GameOptionsForm_Comp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOptionsForm_Double.resx">
+      <DependentUpon>GameOptionsForm_Double.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOptionsForm_Robber.resx">
+      <DependentUpon>GameOptionsForm_Robber.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOptionsForm_SimpleIMP.resx">
+      <DependentUpon>GameOptionsForm_SimpleIMP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScoreHelpForm.resx">
+      <DependentUpon>ScoreHelpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowTextControl.resx">
+      <DependentUpon>ShowTextControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShporaForm.resx">
+      <DependentUpon>ShporaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Switcher.resx">
+      <DependentUpon>Switcher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ResultSelectControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResultSelectControl.Designer.cs">
+      <DependentUpon>ResultSelectControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ResultSelector.Designer.cs">
+      <DependentUpon>ResultSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobberControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RobberControl.Designer.cs">
+      <DependentUpon>RobberControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScoreHelpForm.Designer.cs">
+      <DependentUpon>ScoreHelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShowTextControl.Designer.cs">
+      <DependentUpon>ShowTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShporaControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShporaControl.Designer.cs">
+      <DependentUpon>ShporaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShporaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShporaForm.Designer.cs">
+      <DependentUpon>ShporaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SmallHelper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Switcher.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Switcher.designer.cs">
+      <DependentUpon>Switcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxInTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\arrow_left.bmp" />
+    <None Include="Resources\arrow_left_passive.bmp" />
+    <Content Include="Resources\arrow_right.bmp" />
+    <None Include="Resources\arrow_right_passive.bmp" />
+    <Content Include="Resources\check1.bmp" />
+    <Content Include="Resources\check2.bmp" />
+    <None Include="Resources\check_false.bmp" />
+    <None Include="Resources\check_hz.bmp" />
+    <None Include="Resources\check_true.bmp" />
+    <None Include="Resources\cute_big_button.bmp" />
+    <Content Include="Resources\cute_big_button_1.bmp" />
+    <Content Include="Resources\cute_big_button_2.bmp" />
+    <None Include="Resources\cute_big_button_selected.bmp" />
+    <None Include="Resources\cute_button.bmp" />
+    <Content Include="Resources\cute_button_1.bmp" />
+    <Content Include="Resources\cute_button_2.bmp" />
+    <None Include="Resources\cute_button_selected.bmp" />
+    <None Include="Resources\cute_long_button.bmp" />
+    <None Include="Resources\cute_long_button_selected.bmp" />
+    <Content Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
