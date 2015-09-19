@@ -1,7 +1,7 @@
 # BridgeNote
 
 <h3>Description:</h3>
-WindowsMobile 6/7 app for logging you bridge games results.<br>
+WindowsMobile 6.x app for logging your "bridge" card games results.<br>
 todo...
 
 <h3>Installation:</h3>
